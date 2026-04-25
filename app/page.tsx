@@ -297,26 +297,26 @@ function StorySection() {
 
       <div className="story-timeline">
         {MOCK_DATA.story.timeline.map((s, i) => (
-          <div key={s.year} className="story-item" style={{ animationDelay: `${i * 0.1}s` }}>
+          <div key={s.year} className="story-item">
             {i % 2 === 0 ? (
               <>
-                <div className="story-content" style={{ gridColumn: 1, textAlign: "right" }}>
+                <div className="story-content">
                   <p className="story-year-label">{s.year}</p>
                   <p className="story-title-text">{s.title}</p>
                   <p className="story-desc">{s.description}</p>
                 </div>
-                <div className="story-spacer" style={{ display: "flex", justifyContent: "center", gridColumn: 2 }}>
+                <div className="story-spacer">
                   <div className="story-dot" />
                 </div>
-                <div style={{ gridColumn: 3 }} />
+                <div className="story-empty" />
               </>
             ) : (
               <>
-                <div style={{ gridColumn: 1 }} />
-                <div className="story-spacer" style={{ display: "flex", justifyContent: "center", gridColumn: 2 }}>
+                <div className="story-empty" />
+                <div className="story-spacer">
                   <div className="story-dot" />
                 </div>
-                <div className="story-content" style={{ gridColumn: 3 }}>
+                <div className="story-content">
                   <p className="story-year-label">{s.year}</p>
                   <p className="story-title-text">{s.title}</p>
                   <p className="story-desc">{s.description}</p>
