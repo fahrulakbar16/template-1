@@ -773,6 +773,7 @@ function FloatingNav() {
   return (
     <nav
       id="floating-nav"
+      className="floating-nav"
       style={{
         position: "fixed",
         bottom: 24,
@@ -789,7 +790,6 @@ function FloatingNav() {
         padding: "10px 20px",
         boxShadow: "0 8px 40px rgba(139,109,70,0.15)",
         display: "flex",
-        gap: 4,
       }}
     >
       {NAV_ITEMS.map((item) => (
@@ -798,14 +798,12 @@ function FloatingNav() {
           href={item.href}
           id={`nav-${item.label.toLowerCase()}`}
           title={item.label}
+          className="nav-link"
           style={{
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            width: 36,
-            height: 36,
             borderRadius: "50%",
-            fontSize: 16,
             textDecoration: "none",
             transition: "background 0.2s",
           }}

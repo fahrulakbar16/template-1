@@ -1102,44 +1102,103 @@ body {
   margin-bottom: 48px;
 }
 
+/* ── Floating Nav Base ──────────────────────── */
+.floating-nav {
+  gap: 8px;
+}
+.nav-link {
+  width: 36px;
+  height: 36px;
+  font-size: 16px;
+}
+
 /* ── Responsive ─────────────────────────────── */
 @media (max-width: 640px) {
+  :root {
+    --section-padding: 60px 20px;
+    --radius-lg: 32px;
+  }
+
+  .hero-section { padding-top: 60px; }
+
   .couple-grid {
     grid-template-columns: 1fr;
     gap: 16px;
   }
   .couple-sep { display: none; }
 
-  .story-timeline::before { left: 20px; }
+  /* Story Timeline Mobile */
+  .story-timeline::before { left: 14px; transform: none; }
   .story-item {
-    grid-template-columns: auto 1fr;
-    gap: 16px;
+    grid-template-columns: 44px 1fr;
+    gap: 0;
+    margin-bottom: 32px;
   }
-  .story-item:nth-child(odd) .story-content,
-  .story-item:nth-child(even) .story-content {
+  .story-content {
     grid-column: 2;
-    text-align: left;
+    text-align: left !important;
+    padding: 16px 20px;
   }
-  .story-item:nth-child(odd) .story-year,
-  .story-item:nth-child(even) .story-year { display: none; }
-  .story-item:nth-child(odd) .story-spacer,
-  .story-item:nth-child(even) .story-spacer { display: none; }
-  .story-dot { grid-column: 1; }
+  .story-spacer {
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    justify-content: flex-start !important;
+    align-items: center;
+    padding-left: 8px;
+  }
+  .story-dot {
+    width: 10px;
+    height: 10px;
+    border-width: 2px;
+  }
+  /* Hide unused grid items in mobile */
+  .story-item > div:empty { display: none; }
 
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
   }
   .gallery-item:first-child { grid-row: auto; }
 
   .hero-date-card {
     flex-direction: column;
-    gap: 16px;
-    padding: 24px;
+    gap: 12px;
+    padding: 20px;
+    width: 100%;
+    max-width: 280px;
   }
-  .hero-date-sep { width: 60px; height: 1px; }
+  .hero-date-sep { width: 40px; height: 1px; }
+  .hero-date-number { font-size: 28px; }
 
-  .doa-card { padding: 36px 24px; }
-  .gift-card { padding: 36px 24px; }
-  .rsvp-form { padding: 36px 24px; }
-  .wishes-form { padding: 32px 24px; }
+  .doa-card,
+  .gift-card,
+  .rsvp-form,
+  .wishes-form {
+    padding: 32px 20px;
+    border-radius: var(--radius-md);
+  }
+
+  .floating-nav {
+    padding: 8px 12px;
+    gap: 2px;
+  }
+  .nav-link {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+
+  .footer-script { font-size: 48px; }
+}
+
+@media (max-width: 380px) {
+  .countdown { gap: 8px; }
+  .countdown-item {
+    min-width: 60px;
+    padding: 12px 8px;
+  }
+  .countdown-num { font-size: 24px; }
+  
+  .gallery-grid { grid-template-columns: 1fr; }
 }
