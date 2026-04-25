@@ -22,6 +22,7 @@ export interface WishItem {
 export interface InvitationMeta {
   slug: string;
   primary_language: string;
+  music_url: string;
   theme_config: {
     primary_color: string;
     font_family_serif: string;
