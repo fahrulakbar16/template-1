@@ -616,7 +616,9 @@ body {
 .event-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-float); }
 
 .event-badge {
-  display: inline-block;
+  display: block;
+  width: fit-content;
+  margin: 0 auto 20px;
   background: var(--pink-100);
   color: var(--pink-500);
   font-size: 10px;
@@ -625,7 +627,7 @@ body {
   text-transform: uppercase;
   padding: 6px 14px;
   border-radius: var(--radius-full);
-  margin-bottom: 20px;
+  text-align: center;
 }
 
 .event-name {

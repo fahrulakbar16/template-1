@@ -58,6 +58,110 @@ function Ornament() {
   return <div className="ornament">✦</div>;
 }
 
+// ── Themed SVG Icons ──────────────────────────
+const IconMail = ({ size = 18 }: { size?: number }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+    <rect x="2" y="4" width="20" height="16" rx="2"/>
+    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+  </svg>
+);
+
+const IconCalendar = ({ size = 18 }: { size?: number }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+    <rect x="3" y="4" width="18" height="18" rx="2"/>
+    <path d="M16 2v4M8 2v4M3 10h18"/>
+  </svg>
+);
+
+const IconPin = ({ size = 18 }: { size?: number }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+    <path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/>
+    <circle cx="12" cy="10" r="3"/>
+  </svg>
+);
+
+const IconCamera = ({ size = 18 }: { size?: number }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+    <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3Z"/>
+    <circle cx="12" cy="13" r="3"/>
+  </svg>
+);
+
+const IconHome = ({ size = 18 }: { size?: number }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+    <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+    <polyline points="9 22 9 12 15 12 15 22"/>
+  </svg>
+);
+
+const IconHeart = ({ size = 18 }: { size?: number }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+    <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+  </svg>
+);
+
+const IconCheck = ({ size = 18 }: { size?: number }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+    <path d="m9 12 2 2 4-4"/>
+  </svg>
+);
+
+const IconMosque = ({ size = 18 }: { size?: number }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+    <path d="M2 20h20"/>
+    <path d="M7 20V10c0-1.1.9-2 2-2h6a2 2 0 0 1 2 2v10"/>
+    <path d="M12 4a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" fill="currentColor" stroke="none"/>
+    <path d="M9 8c0-1.7 1.3-3 3-3s3 1.3 3 3"/>
+    <path d="M4 20V14a2 2 0 0 1 2-2"/>
+    <path d="M20 20V14a2 2 0 0 0-2-2"/>
+  </svg>
+);
+
+const IconBuilding = ({ size = 18 }: { size?: number }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+    <rect x="4" y="2" width="16" height="20" rx="1"/>
+    <path d="M9 22v-4h6v4M8 6h.01M16 6h.01M8 10h.01M16 10h.01M8 14h.01M16 14h.01"/>
+  </svg>
+);
+
+const IconGift = ({ size = 40 }: { size?: number }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round">
+    <rect x="3" y="8" width="18" height="4" rx="1"/>
+    <path d="M12 8v13M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/>
+    <path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"/>
+  </svg>
+);
+
+const IconClock = ({ size = 14 }: { size?: number }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+    <circle cx="12" cy="12" r="10"/>
+    <polyline points="12 6 12 12 16 14"/>
+  </svg>
+);
+
+const IconFlower = ({ size = 48 }: { size?: number }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round">
+    <path d="M12 7.5a4.5 4.5 0 1 1 4.5 4.5M12 7.5A4.5 4.5 0 1 0 7.5 12M12 7.5V9m-4.5 3a4.5 4.5 0 1 0 4.5 4.5M7.5 12H9m7.5 0a4.5 4.5 0 1 1-4.5 4.5m4.5-4.5H15m-3 4.5V15"/>
+    <circle cx="12" cy="12" r="3"/>
+  </svg>
+);
+
+const IconClipboard = ({ size = 16 }: { size?: number }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+    <rect width="8" height="4" x="8" y="2" rx="1" ry="1"/>
+    <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/>
+    <path d="m9 14 2 2 4-4"/>
+  </svg>
+);
+
+// Map event icon string to SVG component
+function EventVenueIcon({ icon }: { icon: string }) {
+  if (icon === "🕌") return <IconMosque size={15} />;
+  if (icon === "🏛️") return <IconBuilding size={15} />;
+  return <IconBuilding size={15} />;
+}
+
 /* ─────────────────────────────────────────────
    COMPONENTS
 ───────────────────────────────────────────── */
@@ -89,7 +193,7 @@ function CoverSection({ onOpen }: { onOpen: () => void }) {
         </p>
         <p className="cover-date">27 · 09 · 2025</p>
         <button id="btn-open-invitation" className="btn-open" onClick={onOpen}>
-          <span>💌</span>
+          <span style={{ display: 'flex', alignItems: 'center' }}><IconMail size={16} /></span>
           <span>{MOCK_DATA.labels.buttons.open_invitation}</span>
         </button>
       </div>
@@ -149,7 +253,8 @@ END:VCALENDAR`;
 
       <div style={{ marginTop: 24 }}>
         <button id="btn-save-calendar" className="btn-calendar" onClick={handleCalendar}>
-          📅&nbsp; {MOCK_DATA.labels.buttons.save_calendar}
+          <span style={{ display: 'flex', alignItems: 'center' }}><IconCalendar size={14} /></span>
+          {MOCK_DATA.labels.buttons.save_calendar}
         </button>
       </div>
     </AnimSection>
@@ -192,14 +297,14 @@ function CoupleSection() {
       <div className="couple-grid">
         {/* Groom */}
         <div className="couple-card">
-          <div className="couple-avatar-placeholder">👨‍💼</div>
+          <div className="couple-avatar-placeholder" style={{ color: 'var(--brown-400)' }}><IconHeart size={36} /></div>
           <p className="couple-role">{MOCK_DATA.couple.groom.role_label}</p>
           <h3 className="couple-name">{MOCK_DATA.couple.groom.first_name}</h3>
           <p className="couple-fullname">{MOCK_DATA.couple.groom.full_name}</p>
           <p className="couple-parents">{MOCK_DATA.couple.groom.parents_desc}</p>
           <div className="couple-socials">
             <a href={MOCK_DATA.couple.groom.ig_link} className="social-link" id="groom-instagram">
-              📸 {MOCK_DATA.couple.groom.ig_handle}
+              <IconCamera size={13} /> {MOCK_DATA.couple.groom.ig_handle}
             </a>
           </div>
         </div>
@@ -208,14 +313,14 @@ function CoupleSection() {
 
         {/* Bride */}
         <div className="couple-card">
-          <div className="couple-avatar-placeholder">👰</div>
+          <div className="couple-avatar-placeholder" style={{ color: 'var(--pink-400)' }}><IconHeart size={36} /></div>
           <p className="couple-role">{MOCK_DATA.couple.bride.role_label}</p>
           <h3 className="couple-name">{MOCK_DATA.couple.bride.first_name}</h3>
           <p className="couple-fullname">{MOCK_DATA.couple.bride.full_name}</p>
           <p className="couple-parents">{MOCK_DATA.couple.bride.parents_desc}</p>
           <div className="couple-socials">
             <a href={MOCK_DATA.couple.bride.ig_link} className="social-link" id="bride-instagram">
-              📸 {MOCK_DATA.couple.bride.ig_handle}
+              <IconCamera size={13} /> {MOCK_DATA.couple.bride.ig_handle}
             </a>
           </div>
         </div>
@@ -259,11 +364,11 @@ function EventsSection() {
             <span className="event-badge">{evt.type}</span>
             <h3 className="event-name">{evt.title}</h3>
             <div className="event-detail">
-              <div className="event-icon">📅</div>
+              <div className="event-icon"><IconCalendar size={15} /></div>
               <div>{evt.date_formatted}<br />{evt.time_range}</div>
             </div>
             <div className="event-detail">
-              <div className="event-icon">{evt.icon}</div>
+              <div className="event-icon"><EventVenueIcon icon={evt.icon} /></div>
               <div><strong>{evt.venue_name}</strong><br />{evt.address}</div>
             </div>
             <a
@@ -273,7 +378,7 @@ function EventsSection() {
               className="btn-maps"
               id={`btn-maps-${evt.id}`}
             >
-              📍 {MOCK_DATA.labels.buttons.view_maps}
+              <span style={{ display: 'flex', alignItems: 'center' }}><IconPin size={13} /></span> {MOCK_DATA.labels.buttons.view_maps}
             </a>
           </div>
         ))}
@@ -504,7 +609,7 @@ function GiftSection() {
       </div>
 
       <div className="gift-card">
-        <div className="gift-icon">🎁</div>
+        <div className="gift-icon" style={{ color: 'var(--pink-400)' }}><IconGift size={40} /></div>
         <p className="gift-desc">
           {MOCK_DATA.gift.instruction_text}
         </p>
@@ -521,7 +626,11 @@ function GiftSection() {
               onClick={() => handleCopy(b.account_number, b.id)}
               id={`btn-copy-${b.id}`}
             >
-              {copied === b.id ? `✓ ${MOCK_DATA.labels.buttons.copied}` : `📋 ${MOCK_DATA.labels.buttons.copy}`}
+              {copied === b.id ? (
+                <><IconCheck size={14} /> {MOCK_DATA.labels.buttons.copied}</>
+              ) : (
+                <><IconClipboard size={14} /> {MOCK_DATA.labels.buttons.copy}</>
+              )}
             </button>
           </div>
         ))}
@@ -602,7 +711,7 @@ function WishesSection() {
                 <div className="wish-avatar">{w.name[0].toUpperCase()}</div>
                 <div className="wish-meta">
                   <div className="wish-name">{w.name}</div>
-                  <div className="wish-time">🕐 {w.time}</div>
+                  <div className="wish-time" style={{ display: 'flex', alignItems: 'center', gap: 4 }}><IconClock size={12} /> {w.time}</div>
                 </div>
                 <span style={{
                   fontSize: 11, padding: "4px 10px",
@@ -648,7 +757,7 @@ function RsvpSection() {
 
       {sent ? (
         <div className="rsvp-form" id="rsvp-success" style={{ background: "linear-gradient(135deg, var(--pink-50), var(--brown-50))" }}>
-          <div style={{ fontSize: 48, marginBottom: 16 }}>🌸</div>
+          <div style={{ marginBottom: 16, color: 'var(--pink-400)', display: 'flex', justifyContent: 'center' }}><IconFlower size={48} /></div>
           <h3 style={{ fontFamily: "var(--font-serif)", fontSize: 24, color: "var(--brown-600)", marginBottom: 8 }}>
             Terima Kasih, {name}!
           </h3>
@@ -753,12 +862,12 @@ function FooterSection() {
    FLOATING NAV
 ───────────────────────────────────────────── */
 const NAV_ITEMS = [
-  { label: MOCK_DATA.labels.navigation.home, href: "#hero", icon: "🏠" },
-  { label: MOCK_DATA.labels.navigation.couple, href: "#mempelai", icon: "💑" },
-  { label: MOCK_DATA.labels.navigation.event, href: "#acara", icon: "📅" },
-  { label: MOCK_DATA.labels.navigation.gallery, href: "#galeri", icon: "📸" },
-  { label: MOCK_DATA.labels.navigation.wish, href: "#ucapan", icon: "💌" },
-  { label: MOCK_DATA.labels.navigation.rsvp, href: "#konfirmasi", icon: "✅" },
+  { label: MOCK_DATA.labels.navigation.home,    href: "#hero",      Icon: IconHome },
+  { label: MOCK_DATA.labels.navigation.couple,  href: "#mempelai",  Icon: IconHeart },
+  { label: MOCK_DATA.labels.navigation.event,   href: "#acara",     Icon: IconCalendar },
+  { label: MOCK_DATA.labels.navigation.gallery, href: "#galeri",    Icon: IconCamera },
+  { label: MOCK_DATA.labels.navigation.wish,    href: "#ucapan",    Icon: IconMail },
+  { label: MOCK_DATA.labels.navigation.rsvp,    href: "#konfirmasi",Icon: IconCheck },
 ];
 
 function FloatingNav() {
@@ -803,14 +912,23 @@ function FloatingNav() {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
+            width: 36,
+            height: 36,
             borderRadius: "50%",
             textDecoration: "none",
-            transition: "background 0.2s",
+            color: "var(--brown-400)",
+            transition: "background 0.2s, color 0.2s",
           }}
-          onMouseEnter={(e) => ((e.target as HTMLElement).style.background = "var(--pink-100)")}
-          onMouseLeave={(e) => ((e.target as HTMLElement).style.background = "transparent")}
+          onMouseEnter={(e) => {
+            (e.currentTarget as HTMLElement).style.background = "var(--pink-100)";
+            (e.currentTarget as HTMLElement).style.color = "var(--pink-500)";
+          }}
+          onMouseLeave={(e) => {
+            (e.currentTarget as HTMLElement).style.background = "transparent";
+            (e.currentTarget as HTMLElement).style.color = "var(--brown-400)";
+          }}
         >
-          {item.icon}
+          <item.Icon size={18} />
         </a>
       ))}
     </nav>
